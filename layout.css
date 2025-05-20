@@ -1,0 +1,220 @@
+#meet-team-1765 {
+    padding: 6.25rem 1rem;
+    background-color: #000000;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#meet-team-1765 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+#meet-team-1765 .cs-content {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+#meet-team-1765 .cs-title {
+    margin: 0 0 2rem;
+    color: #A9DF86;
+}
+
+#meet-team-1765 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    padding: 0 1.5rem;
+    color: #000;
+    background-color: #7EB86C;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+#meet-team-1765 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+}
+#meet-team-1765 .cs-button-solid:hover:before,
+#meet-team-1765 .cs-button-solid:focus:before {
+    width: 100%;
+}
+
+#meet-team-1765 .cs-button-solid:hover,
+#meet-team-1765 .cs-button-solid:focus {
+    background-color: #43476A;
+    color: #A9DF86;
+    outline: 2px solid #A9DF86;
+    outline-offset: 2px;
+}
+
+#meet-team-1765 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1.25rem;
+}
+
+#meet-team-1765 .cs-item {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: span 2;
+    gap: 1.25rem;
+    position: relative;
+}
+
+#meet-team-1765 .cs-item:hover .cs-picture img {
+    opacity: 0.4;
+    transform: scale(1.2);
+}
+
+#meet-team-1765 .cs-item:hover .cs-link {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#meet-team-1765 .cs-item:hover .cs-link:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s;
+}
+
+#meet-team-1765 .cs-item:hover .cs-job {
+    color: #A9DF86;
+}
+
+#meet-team-1765 .cs-image-group {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 0.91691395;
+}
+
+#meet-team-1765 .cs-picture {
+    width: 100%;
+    height: 27.5rem;
+    background-color: #000;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#meet-team-1765 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.7s, opacity 0.3s;
+}
+
+#meet-team-1765 .cs-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+}
+
+#meet-team-1765 .cs-link {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    background-color: #427270;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-1rem);
+    transition: transform 0.6s, opacity 0.6s;
+}
+
+#meet-team-1765 .cs-link:focus {
+    opacity: 1;
+    transform: translateY(0);
+    outline: 2px solid #A9DF86;
+    outline-offset: 2px;
+}
+
+#meet-team-1765 .cs-link:nth-of-type(2) {
+    transition-delay: 0.08s;
+}
+
+#meet-team-1765 .cs-link:nth-of-type(3) {
+    transition-delay: 0.16s;
+}
+
+#meet-team-1765 .cs-icon {
+    width: 1.25rem;
+    height: auto;
+    display: block;
+}
+
+#meet-team-1765 .cs-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#meet-team-1765 .cs-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin: 0;
+    color: #A9DF86;
+}
+
+#meet-team-1765 .cs-job {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0;
+    color: #7EB86C;
+}
+
+.cs-logo {
+    display: block;
+    max-width: 850px;
+    height: auto;
+    margin: 2rem auto;
+}
